@@ -20,3 +20,24 @@
     visibility: visible;
 } 
 
+#lightbox::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#lightbox::backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 154, 2, 0.534);
+    animation: backgroundColorChange 1.5s forwards;
+}
